@@ -1,0 +1,228 @@
+HTML
+-----
+HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages. It defines the content of a webpage using elements (tags) such as headings, paragraphs, images, links, tables, and forms, which are displayed by web browsers.
+
+- HTML DOM
+	HTML DOM (Document Object Model) is a tree-like representation of an HTML document that allows programming languages such as JavaScript to access and manipulate the structure, content, and style of a web page.
+
+Types of HTML Tags
+------------------
+	1. Basic HTML Tags
+	2. Text Formatting Tags
+	3. Image and Multimedia Tags
+	4. Hyperlink Tags
+	5. List Tags
+	6. Table Tags
+	7. Semantic HTML5 Tags
+	8. Layout & Container Tags
+	9. SVG & Graphics Tags
+	10. Form Tags
+
+
+1. Basic HTML Tags
+-------------------
+
+Basic HTML Tags are the fundamental elements used to create the structure of an HTML document. 
+They define the webpage's layout, metadata, title, styling, scripting, and visible content. 
+These tags form the foundation of every HTML page.
+
+Tags List
+
+<html>   : adata about the webpage such as title, CSS, JavaScript, character encoding, and links to external files. It is not displayed on the webpage. |
+<title>  : Defines the title of the webpage that appears on the browser tab.                                                                                        |
+<body>   : Contains all the visible content of the webpage, such as headings, paragraphs, images, links, tables, and forms.                                         |
+<meta>   : Provides metadata about the HTML document, such as character encoding, author, description, and viewport settings.                                       |
+<link>   : Links external resources like CSS files, icons (favicon), or fonts to the HTML document.                                                                 | 
+<style>  : Contains internal CSS used to style HTML elements within the webpage.                                                                                    | 
+<script> : Embeds or links JavaScript code to make the webpage interactive and dynamic.                                                                             | 
+
+HTML Basic Structure Example
+----------------------------
+
+<!DOCTYPE html>
+<html>
+	<head>
+    		<meta charset="UTF-8">
+    		<title>Basic HTML Tags</title>
+    		<link rel="stylesheet" href="style.css">
+    		<style>CSS code</style>
+    		<script>JS Code</script>
+    	</head>
+
+	<body>
+    		<h1>Hello World!</h1>
+    		<p>This is a basic HTML page.</p>
+	</body>
+</html>
+
+
+- HTML Tag Attribute
+
+	Each HTML tag has its own set of attributes that provide additional information and control the behavior or appearance of that specific tag.
+
+	Example: 
+		<tagname attribute="value">
+
+		<body bgcolor="color_name">
+
+
+2. Text Formatting Tags
+------------------------
+Text Formatting Tags are HTML tags used to organize, emphasize, and style text content on a web page.
+
+<h1> to <h6> : Defines headings, where `<h1>` is the largest and most important, and `<h6>` is the smallest.     
+<p> : Defines a paragraph of text.                                                                      
+<br>: Inserts a single line break.                                                                      
+<hr>: Inserts a horizontal line to separate content.                                                    
+<b> : Displays text in bold without adding importance.                                                  
+<strong> : Displays important text in bold and indicates strong importance.                                  
+<i> : Displays text in italic without adding emphasis.                                                  
+<em> : Displays emphasized text, usually in italics.                                                     
+<u> : Underlines text.                                                                                  
+<mark> : Highlights or marks text.                                                                         
+<small> : Displays text in a smaller font size.                                                             
+<sub> : Displays subscript text below the normal line.                                                    
+<sup> : Displays superscript text above the normal line.                                                  
+<del> : Represents deleted or removed text (usually shown with a strike-through).                         
+<ins> : Represents inserted or newly added text (usually underlined).                                     
+<s> : Displays text with a strike-through to indicate it is no longer accurate or relevant.             
+<pre> : Displays preformatted text, preserving spaces and line breaks.                                    
+
+
+3. Image and Multimedia Tags
+-----------------------------
+
+Image and Multimedia Tags are HTML tags used to display and manage multimedia content such as images, audio, video, external media, and embedded web pages on a webpage.
+
+<img> : Embeds an image into a web page.
+<source> : Specifies multiple media resources for <audio>, <video>, or <picture> elements.
+<audio> : Embeds audio content such as music or sound files.
+<video> : Embeds video content into a web page.
+<track> : Adds subtitles, captions, or text tracks to audio or video files.
+
+4. Hyperlink Tags
+-------------------
+Hyperlink Tags are HTML tags used to create links for navigating between web pages, websites, or different sections of the same page.
+
+<a>	Creates a hyperlink to another webpage, file, email address, or a specific location within a page.
+<nav>	Defines a navigation section that contains links to other pages or sections of the website.
+
+5. List Tags
+-------------
+List Tags are HTML tags used to organize related items into ordered, unordered, or descriptive lists.
+
+Types of List
+--------------
+Ordered List --> <ol> --> <li>--> Defines an unordered (bulleted) list.
+Unordered List --> <ul> --> <li> --> Defines an ordered (numbered) list.
+Description List --> <dl> --> <dt>, <dd> --> Defines a description list.
+
+
+
+
+
+6. Table Tags
+-------------
+Table Tags are HTML tags used to create and organize data into rows and columns in a tabular format.
+
+
+<table>	Defines a table.
+<caption>	Specifies a title or caption for a table.
+<thead>	Groups the header content of a table.
+<tbody>	Groups the main body content of a table.
+<tfoot>	Groups the footer content of a table.
+<tr>	Defines a table row.
+<th>	Defines a header cell in a table.
+<td>	Defines a standard data cell in a table.
+<colgroup>	Groups one or more columns for applying common formatting.
+<col>	Specifies properties for individual columns within a
+
+
+7. Semantic HTML5 Tags
+----------------------
+Semantic HTML5 Tags are HTML elements that clearly describe the meaning and purpose of the content they contain. They improve the structure, readability, accessibility, and search engine optimization (SEO) of web pages.
+
+<header>	Defines the introductory section or header of a webpage or a section.
+<footer>	Defines the footer section containing copyright, contact information, or related links.
+<main>		Specifies the main content of the webpage.
+<section>	Defines a thematic section of related content.
+<article>	Represents independent, self-contained content such as a blog post or news article.
+<aside>		Defines content related to the main content, such as sidebars or advertisements.
+<nav>		Defines a section containing navigation links.
+<details>	Creates expandable and collapsible content that users can open or close.
+<summary>	Defines a visible heading for the <details> element.
+<dialog>	Defines a dialog box or pop-up window.
+<time>		Represents a specific date, time, or duration in a machine-readable format.
+
+
+8. Layout & Container Tags
+----------------------------
+Layout & Container Tags are HTML elements used to organize, group, and structure webpage content for styling and layout purposes.
+
+<div>	A block-level container used to group HTML elements for layout and styling.
+<span>	An inline container used to group text or other inline elements for styling or scripting.
+
+
+9. SVG & Graphics Tags
+------------------------
+SVG & Graphics Tags are HTML elements used to create, display, and manipulate graphics, drawings, and animations directly in a web page.
+
+<svg>		Defines a container for Scalable Vector Graphics (SVG), which are resolution-independent graphics.
+<canvas>	Defines a drawing area where graphics, animations, and games can be created using JavaScript.
+
+10. Form Tag
+-------------
+The <form> tag is used to create an HTML form that collects user input (data) and sends it to a server for processing.
+
+Sysntax
+
+<form action="server-page" method="post">
+    <!-- Form elements -->
+</form>
+
+
+- Elements Under the <form> Tag
+
+The following HTML elements are commonly used inside the <form> tag to collect user input.
+
+
+<input>		Creates input fields such as text, password, email, number, checkbox, radio button, file upload, etc.
+<label>		Defines a label for an input field.
+<textarea>	Creates a multi-line text input area.
+<button>	Creates a clickable button for submit, reset, or other actions.
+<select>	Creates a drop-down list.
+<option>	Defines an item in a drop-down list.
+<optgroup>	Groups related options in a drop-down list.
+<fieldset>	Groups related form elements together.
+<legend>	Provides a title or caption for a <fieldset>.
+<datalist>	Provides predefined suggestions for an input field.
+<output>	Displays the result of a calculation or user action.
+<meter>		Displays a measurement within a known range (e.g., battery level, disk usage).
+<progress>	Displays the progress of a task using a progress bar.
+
+Common <input> Types
+------------------------
+The <input> element supports many types of user input.
+
+	text
+	password
+	email
+	number
+	tel
+	url
+	search
+	date
+	time
+	datetime-local
+	month
+	week
+	color
+	range
+	checkbox
+	radio
+	file
+	hidden
+	submit
+	reset
+	button
+	image
