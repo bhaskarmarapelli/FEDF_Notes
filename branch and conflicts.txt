@@ -1,0 +1,100 @@
+1. open previous project folder(FEDFSEC60) and open cmd in it
+2. navigate to project folder(firstproject)
+   cd firstproject
+3.create a README.md file
+   echo "#my project" > README.md
+4. check status
+   git status
+5. add README.md to staging
+  git add .
+6. commit changes to repository(local)
+
+  git commit -m "readme file created"
+
+7.check remote is added or not 
+
+	git remote -v
+8. if origin already there for push 
+
+   git push origin main
+
+if not add remote origin 
+===================Branching======================
+9.check in which branch you are in 
+
+   git branch
+
+10.create a new branch
+
+  git branch feature1
+
+11. switch to the branch 
+
+  git switch feature1
+
+12. experiment(add a new feature) by adding a newfile to project
+
+   notepad login.html
+
+  write login page , save the file
+
+13.add login.html to staging
+  git add .
+
+14.commit changes to login.html
+
+	git commit -m "login page added"
+
+===============merging branch===============
+
+
+15.change branch to main
+    git switch main
+16.merge the feature1 branch to main
+   git merge feature1
+
+17. push changes to origin
+
+	git push origin main
+18.create another branch feature2
+  git branch feature2
+19.open index.html
+  notepad index.html
+20. add a new line in index.html
+
+   <a href="login.html> loginpage </a>
+21. add files to staging
+  git add .
+22. commit changes
+  git commit -m "login link added"
+23. switch to main branch
+   git switch main
+24. merge feature2 to main
+ git merge feature2
+24. push changes to GitHub
+  git push origin main
+============conflict===========
+ 
+25. git switch feature1
+26. notepad README.md
+	edit readme add a line
+27. git add .
+28. git commit -m "edite readme in feature1"
+29. git switch main
+30. notepad README.md
+       edite readme add aline
+31. git add .
+32. git commit -m "edited readme in main"
+33. git merge feature1
+
+  conflit
+
+34. open README.md file
+	notepad README.md
+
+ resolve conflict by editing file keeping needed lines
+
+35. git add .
+36 git commit -m "conflict resolved"
+
+37. git merge feature1
